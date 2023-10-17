@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>atividade1</title>
+</head>
+<body>
+    <script>
+        let numero1 = parseFloat(prompt("Digite um número:"));
+        let numero2 = parseFloat(prompt("Digite outro número:"));
+        let calculo = parseInt(prompt("Para o operador '-' digite 1\n Para o operador '+' digite 2\n Para o operador '/' digite 3\n Para o operador '*' digite 4"));
+        let calculoFinal;
+        if(numero1 == isNaN && numero2 == isNan){
+            alert("insira dois numeros!!");
+        }else if(calculo == 1){
+            calculoFinal = numero1 - numero2;
+            alert("O resultado é: "+ calculoFinal);
+        }else if(calculo == 2){
+            calculoFinal = numero1 + numero2;
+            alert("O resultado é: "+ calculoFinal);
+        }else if(calculo == 3){
+            calculoFinal = numero1 / numero2;
+            alert("O resultado é: "+ calculoFinal);
+        }else if(calculo == 4){
+            calculoFinal = numero1 * numero2;
+            alert("O resultado é: "+ calculoFinal);
+        }else if(calculo < 1 || calculo > 4){
+            alert("Digite um número válido");
+        }
+    </script>
+    
+</body>
+</html>
